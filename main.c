@@ -6,18 +6,26 @@
 int main(int argc, char *argv[]) {
 	
 	int i;
-	int student[5];
-	
-	student[0]=10;
-	student[1]=20;
-	student[2]=30;
-	student[3]=40;
-	student[4]=50;
+	int grade[5];
+	int score[5];
 	
 	for(i=0;i<5;i++)
-		printf("student[%i]=%i\n",i,student[i]);
+	{
+		grade[i]=rand()%100;
 		
+	}
+	
+
+	for(i=0;i<5;i++)
+		{
+			score[i]=grade[i];
+		}	
+	
+	for(i=0;i<5;i++)
+	{
+		printf("score[%d]=%d\n",i,score[i]);
 		
+	}
 	
 	
 	return 0;
